@@ -1,0 +1,209 @@
+/* ====================
+General Styles
+==================== */
+
+/* Logo Size ---------- */
+
+span#logo img.logo-main {
+    max-height: 60px!important;
+}
+
+/* Butto Fonts ---------- */
+
+a.button {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+/* Non sticky footer fix ---------- */
+
+div#Content {
+    min-height: 60vh;
+}
+
+/* My Account Tabs ---------- */
+
+.woocommerce-MyAccount-navigation ul li.is-active a {
+    border-radius: 5px;
+}
+
+
+
+/* ====================
+Header
+==================== */
+
+
+/* Top Bar Border ---------- */
+
+div#Top_bar {
+    border-bottom: 1px solid rgb(228, 231, 239);
+}
+
+/* Logo Border Remove ---------- */
+
+div.logo {
+    border-bottom: none !important;
+}
+
+
+
+/* ====================
+Footer
+==================== */
+
+/* Footer Top Border ---------- */
+
+div.footer_copy {
+    border-top: 1px solid rgba(255, 255, 255,1) !important;
+}
+
+/* Footer Menu Styles ---------- */
+
+#Footer ul.menu {
+    background-color: inherit;
+    list-style: none;
+    font-size: 1.25em;
+}
+
+#Footer ul.menu a {
+    display: inline-block;
+    font-size: 1.25rem;
+    padding: 0.75rem;
+    margin-bottom: 0.25rem;
+    border-radius: 5px;
+    transition: background 0.5s;
+}
+
+#Footer ul.menu a:hover {
+    text-decoration: none;
+    color: #d8709a;
+    background: rgba(255,255,255,0.7);
+}
+
+/* Footer Header Styles ---------- */
+
+#Footer h4 {
+    color: #d8709a;
+}
+
+/* Footer Mailchimp Form ---------- */
+
+#Footer form {
+    font-size: 1.25rem !important;
+    font-family: "Lora", Arial, Tahoma, sans-serif;
+    background-color: #E6E9EF;
+}
+
+#Footer form input[type="submit"] {
+    background-color:  #d8709a;
+    border: 1px solid #d8709a;
+    padding: 0 !important;
+}
+
+#Footer form input[type="submit"]:hover {
+    background-color:  #fff;
+    color: #d8709a;
+}
+
+#Footer form input[type="email"] {
+    width: 80%;
+}
+
+form.woocommerce-ordering {
+    position: relative;
+    z-index: 0;
+}
+
+/* Footer Link Columns ---------- */
+
+aside#woocommerce_product_categories-4 {
+    padding-top: 40px;
+}
+
+/* Footer Column Spacing Desktop ---------- */
+
+@media (max-width: 960px) {
+
+    aside#woocommerce_product_categories-4 {
+        display: none;
+    }
+
+   #Footer .column.one-fourth {
+        width: 20%;
+        margin-left: 5%;
+    }
+    
+    #Footer .column.one-fourth:last-child {
+        width: 30%;
+        margin-left: 10%;
+    }
+
+    #Footer ul.menu li {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/* ====================
+Sidebar
+==================== */
+
+
+/* Category List Font & Spacing ---------- */
+
+aside#woof_widget-2 div.woof_redraw_zone {
+    font-size: 1.125em;
+}
+
+div.widget-area div.woof_container_inner_category h4 {
+    padding-top: 30px;
+}
+
+div.widget-area h3 {
+     text-align: center;
+    font-size: 2em;
+    margin-bottom: 1.5em
+}
+ 
+/* Hide sidebar widget on smaller screens ---------- */
+
+@media screen and (max-width: 959px) {
+    div.widget-area {
+        display: none;
+    }
+    .with_aside .sections_group {
+        width: 100%;
+    }
+}
+
+
+
+/* ====================
+Checkout
+==================== */
+
+div#customer_details,
+div#order_review {
+    margin-bottom: 5%;
+}
+
+input#place_order {
+    font-size: 1.25rem;
+}
+
+
+
+/* ====================
+Product Pages
+==================== */
+
+.single-product .woocommerce-Price-amount {
+    font-size: 1.125rem;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.single-product .woocommerce-Price-amount:first-letter {
+    font-size: 1.5rem!important;
+}
